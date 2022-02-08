@@ -181,10 +181,10 @@ section .head h1 {
 section .body-card {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
 }
 .body-card.contacto {
-  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
 }
 .body-card .card {
   background: #222;
@@ -256,8 +256,8 @@ section .body-card {
 }
 
 .box-container {
-  -webkit-columns: 3 21rem;
-  columns: 3 21rem;
+  -webkit-columns: 3 17rem;
+  columns: 3 17rem;
   -webkit-column-gap: 1.5rem;
   column-gap: 1.5rem;
 }

@@ -13,6 +13,19 @@
 :root {
   --color: #4caf50;
 }
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0.6;
+  filter: invert(0.8);
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
 
 html::-webkit-scrollbar {
   width: 0.8rem;
@@ -256,8 +269,8 @@ section .body-card {
 }
 
 .box-container {
-  -webkit-columns: 3 17rem;
-  columns: 3 17rem;
+  -webkit-columns: 3 15rem;
+  columns: 3 15rem;
   -webkit-column-gap: 1.5rem;
   column-gap: 1.5rem;
 }
@@ -267,10 +280,10 @@ section .body-card {
   break-inside: avoid;
   color: #fff;
 }
-.box p{
+.box p {
   color: #aaa;
 }
-.box img{
+.box img {
   border-radius: 20px;
 }
 
